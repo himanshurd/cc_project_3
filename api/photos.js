@@ -5,6 +5,9 @@ const { Photo, PhotoClientFields } = require('../models/photo')
 
 const router = Router()
 
+const jwt = require('jsonwebtoken');
+const auth = require('../lib/auth');
+
 /*
  * Route to create a new photo.
  */

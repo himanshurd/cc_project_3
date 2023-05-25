@@ -5,6 +5,9 @@ const { Review, ReviewClientFields } = require('../models/review')
 
 const router = Router()
 
+const jwt = require('jsonwebtoken');
+const auth = require('../lib/auth')
+
 /*
  * Route to create a new review.
  */
